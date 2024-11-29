@@ -1,16 +1,9 @@
 # Pipe-Network
 
-> Pipe Network | The decentralized CDN redefining data delivery 🌍 | Faster bandwidth, lower latency ⚡ | Built on @Solana Pipe Network is taking decentralized content delivery to the next level with a two-tier node system that ensures high performance and reliability. PoP Nodes and Guardian Nodes. 🖥️📊
-
-> Join the Pipe Network DevNet – Be the First to Run a PoP Node.
->
-> Register here [Pipe Network Dashboard](https://pipecdn.app/signup?ref=cHZzci5zYW)
->
-> Check your email for the download link.
-
-> Join our DevNet today! This initiative allows node operators to build a reputation before the incentivized testnet launch.
-
->💡 Prepare for Testnet: The incentivized testnet will follow, rewarding those who show strong performance. Both PoP Nodes and Guardian Nodes will play critical roles in the future of Pipe Network.
+> Join the Pipe Network DevNet incentivized testnet launch.
+> Register here [Referral Link: https://pipecdn.app/signup?ref=Y3J5cHRvLm)
+> Check your email for the Whitelisted link.
+> Open Pipe-tool & dcdnd Node link from WL mail and save it
 
 Step-by-Step Instructions
 
@@ -57,7 +50,13 @@ sudo chmod +x /opt/dcdn/dcdnd
 /opt/dcdn/pipe-tool generate-registration-token --node-registry-url="https://rpc.pipedev.network"
 ```
 
-### 7. Create the Service File:
+### 7. Set path :
+
+```bash
+cd /etc/systemd/system/dcdnd.service
+```
+
+### 8. Create the Service File:
 
 ```bash
 sudo cat > /etc/systemd/system/dcdnd.service << 'EOF'
@@ -97,14 +96,14 @@ WantedBy=multi-user.target
 EOF
 ```
 
-### 8. Open Ports:
+### 9. Open Ports:
 
 ```bash
 sudo ufw allow 8002/tcp
 sudo ufw allow 8003/tcp
 ```
 
-### 9. Start the Node:
+### 10. Start the Node:
 
 ```bash
 sudo systemctl daemon-reload
@@ -112,7 +111,7 @@ sudo systemctl enable dcdnd
 sudo systemctl start dcdnd
 ```
 
-### 10. Check if the Node is Running:
+### 11. Check if the Node is Running:
 
 ```bash
 /opt/dcdn/pipe-tool list-nodes --node-registry-url="https://rpc.pipedev.network"
@@ -120,7 +119,7 @@ sudo systemctl start dcdnd
 
 (If it shows as active, the node is running and operational.)
 
- 11. Generate and Register Wallet:
+### 12. Generate and Register Wallet:
 
 ```bash
 /opt/dcdn/pipe-tool generate-wallet --node-registry-url="https://rpc.pipedev.network"
@@ -132,4 +131,4 @@ sudo systemctl start dcdnd
 /opt/dcdn/pipe-tool link-wallet --node-registry-url="https://rpc.pipedev.network"
 ```
 
-That’s it! You can refer to the detailed guide here: [Pipe Network Quickstart](https://docs.pipe.network/getting-started/quickstart#join-the-devnet)
+That’s it! 
