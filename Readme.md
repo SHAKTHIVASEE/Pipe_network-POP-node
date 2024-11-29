@@ -1,8 +1,11 @@
 # Pipe-Network
 
 > Join the Pipe Network DevNet incentivized testnet launch.
-> Register here [Referral Link: https://pipecdn.app/signup?ref=Y3J5cHRvLm)
+
+> Register here [Link: https://pipecdn.app/signup?ref=Y3J5cHRvLm)
+
 > Check your email for the Whitelisted link.
+
 > Open Pipe-tool & dcdnd Node link from WL mail and save it
 
 Step-by-Step Instructions
