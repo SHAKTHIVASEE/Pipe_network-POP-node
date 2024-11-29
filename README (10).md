@@ -119,7 +119,7 @@ sudo systemctl start dcdnd
 
 (If it shows as active, the node is running and operational.)
 
-### 12. Generate and Register Wallet:
+### 12. Generate and Register Wallet and save the data:
 
 ```bash
 /opt/dcdn/pipe-tool generate-wallet --node-registry-url="https://rpc.pipedev.network"
@@ -130,5 +130,14 @@ sudo systemctl start dcdnd
 ```bash
 /opt/dcdn/pipe-tool link-wallet --node-registry-url="https://rpc.pipedev.network"
 ```
+
+### 11. View logs:
+```bash
+  sudo journalctl -f -u dcdnd.service
+```
+```bash
+  systemctl status dcdnd
+```
+
 
 That’s it! 
