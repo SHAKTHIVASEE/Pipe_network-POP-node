@@ -56,7 +56,7 @@ sudo chmod +x /opt/dcdn/dcdnd
 ### 7. Set path :
 
 ```bash
-cd /etc/systemd/system/dcdnd.service
+cd /etc/systemd/system/
 ```
 
 ### 8. Create the Service File:
